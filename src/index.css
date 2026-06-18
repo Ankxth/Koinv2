@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Pinyon+Script&display=swap");
+@import url("https://fonts.cdnfonts.com/css/amsterdam-four");
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cardo", "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-amsterdam: "Amsterdam Four", "Amsterdam", "Pinyon Script", cursive;
+  --radius-lg: var(--radius);
+  --radius: 0.625rem;
+  --color-accent: #819A9C;
+  --color-secondary: #2f020c;
+}
+
+/* Nav dropdown actions */
+.nav-dropdown {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.nav-item:hover .nav-dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Scroll reveal classes */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body {
+  background-color: #EEE9DF;
+  color: #2f020c;
+  font-family: var(--font-sans);
+}
