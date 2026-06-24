@@ -107,14 +107,14 @@ export default function AboutPage({ onOpenModal }: Props) {
             {[
               {
                 name: "Mani BV",
-                role: "Creative Director & Founder",
-                desc: "Oversees aesthetic strategy, custom architectural preservation, and international brand partnerships.",
+                role: "Operational Director",
+                desc: "Leads day-to-day studio operations, client coordination, and project execution from concept to completion.",
                 image: maniBvImage,
               },
               {
                 name: "Soohyun Choi",
-                role: "Lead Interior Architect",
-                desc: "Specializes in blending historical structures with minimalistic luxury comfort and modern utilities.",
+                role: "Business Director",
+                desc: "Drives business strategy, client partnerships, and ensures every project delivers lasting value.",
                 image: soohyunChoiImage,
               }
             ].map((member) => (
