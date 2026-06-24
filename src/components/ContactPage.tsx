@@ -123,7 +123,7 @@ export default function ContactPage() {
                   </h3>
                 </div>
                 <div className="space-y-1.5 text-sm font-mono font-semibold text-[#2f020c]">
-                  <p>+91-84315 81219</p>
+                  <p>+91-84315 81291</p>
                   <p>+91-90191 92192</p>
                   <p>+91-96324 76480</p>
                 </div>
@@ -131,7 +131,7 @@ export default function ContactPage() {
                 {/* Instant Link to WhatsApp */}
                 <div className="mt-4 pt-4 border-t border-stone-100">
                   <a
-                    href="https://wa.me/918431581219"
+                    href="https://wa.me/918431581291"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full text-[11px] font-bold uppercase tracking-wider shadow-xs transition-colors no-underline border-none cursor-pointer"
