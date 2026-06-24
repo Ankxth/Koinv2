@@ -145,7 +145,7 @@ export default function AppointmentPage({ onSuccess }: Props) {
 
                   <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center w-full">
                     <a
-                      href="https://wa.me/918431581219"
+                      href="https://wa.me/918431581291"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="no-underline inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#25D366] hover:bg-[#20ba59] hover:scale-103 transition-transform text-white rounded-full text-xs font-bold uppercase tracking-wider"
@@ -220,7 +220,7 @@ export default function AppointmentPage({ onSuccess }: Props) {
                           className={`w-full px-4 py-3.5 bg-stone-50/50 border rounded-lg text-sm font-light text-[#2f020c] outline-none transition-all focus:bg-white ${
                             errors.phone ? "border-red-400 focus:border-red-500" : "border-stone-200 focus:border-[#819A9C]"
                           }`}
-                          placeholder="e.g. +91 84315 81219"
+                          placeholder="e.g. +91 84315 81291"
                           value={phone}
                           onChange={(e) => {
                             setPhone(e.target.value);

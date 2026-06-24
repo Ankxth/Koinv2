@@ -105,14 +105,14 @@ export default function Footer({ currentView }: FooterProps) {
             </a>
             <div style={{ marginTop: 8, display: "flex", flexDirection: "column", gap: 4 }}>
               <a
-                href="https://wa.me/918431581219"
+                href="https://wa.me/918431581291"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "inherit", textDecoration: "none", transition: "color 0.2s" }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = "#ffffff")}
                 onMouseLeave={(e) => (e.currentTarget.style.color = "inherit")}
               >
-                +91-84315 81219
+                +91-84315 81291
               </a>
               <a
                 href="https://wa.me/919019192192"

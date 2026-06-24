@@ -98,7 +98,10 @@ export default function App() {
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [hasSubmitted, setHasSubmitted] = useState(() => {
     try {
-      return localStorage.getItem("has_submitted_appointment") === "true";
+      const lastShown = localStorage.getItem("popup_last_shown");
+      if (!lastShown) return false;
+      const diff = Date.now() - parseInt(lastShown);
+      return diff < 3 * 60 * 1000; // 3 minutes in ms
     } catch {
       return false;
     }
@@ -131,9 +134,11 @@ export default function App() {
     // Only show popup on home page, if they haven't submitted the forms, and if it's not already open
     if (currentView === "home" && !modalOpen && !hasSubmitted) {
       timer = setTimeout(() => {
-        // Double check condition before opening to avoid race conditions
-        setModalOpen(true);
-      }, 15000);
+  try {
+    localStorage.setItem("popup_last_shown", Date.now().toString());
+  } catch {}
+  setModalOpen(true);
+}, 15000);
     }
     
     return () => clearTimeout(timer);
