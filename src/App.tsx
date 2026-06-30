@@ -111,7 +111,7 @@ export default function App() {
     setSuccessMessage(msg);
     setHasSubmitted(true);
     try {
-      localStorage.setItem("has_submitted_appointment", "true");
+      localStorage.setItem("popup_last_shown", Date.now().toString());
     } catch (e) {
       console.error(e);
     }
@@ -286,14 +286,16 @@ export default function App() {
         )}
       </main>
       <Footer currentView={currentView} />
-      <MembershipModal open={modalOpen} onClose={() => setModalOpen(false)} onSuccess={handleSuccess} />
-
-      {/* Success Toast Notification */}
-      <AnimatePresence>
-        {successMessage && (
-          <motion.div
-            initial={{ opacity: 0, y: -20, x: "-50%" }}
-            animate={{ opacity: 1, y: 0, x: "-50%" }}
+      <MembershipModal 
+  open={modalOpen} 
+  onClose={() => {
+    try {
+      localStorage.setItem("popup_last_shown", Date.now().toString());
+    } catch {}
+    setModalOpen(false);
+  }} 
+  onSuccess={handleSuccess} 
+/>
             exit={{ opacity: 0, y: -20, x: "-50%" }}
             style={{
               position: "fixed",
