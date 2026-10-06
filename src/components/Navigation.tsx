@@ -109,7 +109,7 @@ export default function Navigation({ onOpenModal, currentView, onViewChange }: P
         {/* Right actions */}
         <div className="hidden lg:flex items-center gap-6">
           <a
-            href="https://wa.me/918431581219"
+            href="https://wa.me/918431581291"
             target="_blank"
             rel="noopener noreferrer"
             className={`no-underline px-5 py-2.5 active:scale-98 transition-all font-bold text-xs tracking-wider uppercase rounded-full shadow-sm flex items-center gap-2 ${
@@ -129,7 +129,7 @@ export default function Navigation({ onOpenModal, currentView, onViewChange }: P
         <div className="lg:hidden flex items-center gap-4">
           {!mobileOpen && (
             <a
-              href="https://wa.me/918431581219"
+              href="https://wa.me/918431581291"
               target="_blank"
               rel="noopener noreferrer"
               className={`p-2 rounded-full flex items-center justify-center shadow-sm transition-all ${
@@ -176,7 +176,7 @@ export default function Navigation({ onOpenModal, currentView, onViewChange }: P
 
                   {item.id === "contact" && (
                     <a
-                      href="https://wa.me/918431581219"
+                      href="https://wa.me/918431581291"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2.5 rounded-full bg-[#25D366] hover:bg-[#20ba59] active:scale-95 transition-transform flex items-center justify-center shrink-0 shadow-sm"
@@ -194,7 +194,7 @@ export default function Navigation({ onOpenModal, currentView, onViewChange }: P
 
           <div className="space-y-6">
             <a
-              href="https://wa.me/918431581219"
+              href="https://wa.me/918431581291"
               target="_blank"
               rel="noopener noreferrer"
               className="no-underline w-full text-center bg-[#25D366] text-white hover:bg-[#20ba59] active:scale-98 font-bold text-sm uppercase tracking-wider py-4 rounded-xl shadow-md transition-all flex items-center justify-center gap-2"
